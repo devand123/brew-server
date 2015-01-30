@@ -8,10 +8,10 @@ var config = {
 		brewerydb_api_key: 'e0794624a221cf578c9805ff91ab8cbb'
 	},
 	production: {
-		ENV_URL: 'https://s3-us-west-2.amazonaws.com/',
+		ENV_URL: 'https://s3-us-west-2.amazonaws.com',
 		brewerydb_api_key: 'e0794624a221cf578c9805ff91ab8cbb'
 	}
 };
 
-var environment = process.NODE_ENV || 'local';
+var environment = process.env.NODE_ENV || 'local';
 module.exports = config[environment];
