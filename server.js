@@ -27,4 +27,4 @@ app.use(function (err, req, res, next) {
 require('./controllers/brewController').init(app);
 
 
-app.listen(3000);
+app.listen(config.PORT);
